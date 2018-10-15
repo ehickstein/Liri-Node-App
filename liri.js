@@ -139,7 +139,7 @@ else if(command == "do-what-it-says"){
         }
         
         else if(command == "movie-this"){
-            if(input === undefined){
+            if(dataArr[0] === undefined){
                 console.log("Title: Mr. Nobody");
                 console.log("The movie was made in: 2009");
                 console.log("IMDB Rating: 7.9");
@@ -150,7 +150,7 @@ else if(command == "do-what-it-says"){
                 console.log("Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham, Rhys Ifans, Natasha Little");
             }
             else{
-                var omdbURL = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy";
+                var omdbURL = "http://www.omdbapi.com/?t=" + dataArr[1] + "&y=&plot=short&apikey=trilogy";
                 request(omdbURL, function(error, response, body){
         
                     if (!error && response.statusCode === 200) {
