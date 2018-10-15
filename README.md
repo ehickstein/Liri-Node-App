@@ -33,6 +33,11 @@ Note: if the band name, song name, or movie name is more than one word, the user
 ## How to Use
 1. Clone this repository onto your computer.
 2. Open the command line (Git Bash, Terminal) and navigate to the Liri-Node-App folder.
-![Alternative text](/screenshots/Navigate to Liri-Node-App.png)
+![ScreenShot](/screenshots/Navigate.png)
 3. Input one of the commands listed above with a band name, song, or movie title, and press Enter.
+![ScreenShot](/screenshots/Input.png)
 4. You should now have information about that band, song, or movie.
+![ScreenShot](/screenshots/Concert-This.png)
+![ScreenShot](/screenshots/Spotify-This-Song.png)
+![ScreenShot](/screenshots/Movie-This.png)
+![ScreenShot](/screenshots/Do-What-It-Says.png)
