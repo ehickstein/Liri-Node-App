@@ -14,7 +14,9 @@
 Liri-Node-App is an application that allows the user to input a certain command, and either a band, song title, or movie name,
 and it will output relevant information about upcoming events for that band, details about songs with that song title, and
 information about the movie inputted. This is accomplished through the use of Node.js, the main JavaScript library used on 
-this app, to call each specific API and return the relevant information.
+this app, to call each specific API and return the relevant information. The .env file and DotEnv Node.js package were used to
+safeguard my personal Spotify Developers API key and secret, for the Spotify part of the app to work, the user will need to 
+add a .env file with the following, 'SPOTIFY_ID=your_spotify_id_here' and 'SPOTIFY_SECRET=your_spotify_secret_here'.
 
 ## Commands
 Note: if the band name, song name, or movie name is more than one word, the user must place the input in quotation marks ("").
@@ -41,3 +43,4 @@ Note: if the band name, song name, or movie name is more than one word, the user
 ![ScreenShot](/screenshots/Spotify-This-Song.png)
 ![ScreenShot](/screenshots/Movie-This.png)
 ![ScreenShot](/screenshots/Do-What-It-Says.png)
+Note: the 'random.txt' file currently contains 'spotify-this-song,"I Want It That Way"'.
