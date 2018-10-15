@@ -110,15 +110,15 @@ else if(command == "do-what-it-says"){
             })
         }
         
-        else if(command == "spotify-this-song"){
-            if(input === undefined){
+        else if(dataArr[0] == "spotify-this-song"){
+            if(dataArr[1] === undefined){
                 console.log("Artist: Ace of Base");
                 console.log("Song name: The Sign");
                 console.log("Spotify link: https://open.spotify.com/track/3DYVWvPh3kGwPasp7yjahc?autoplay=true&v=T");
                 console.log("Album: Happy Nation");
             }
             else{
-                spotify.search({ type: "track", query: input})
+                spotify.search({ type: "track", query: dataArr[1]})
                 .then(function(response){
                     var output = response.tracks.items;
                     for(i=0;i<output.length;i++){
